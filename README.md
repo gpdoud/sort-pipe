@@ -64,7 +64,7 @@ To sort the same array by age ...
 
 ```
 <ul>
-  <li *ngFor="'"let user of users | sort:'age'">[{{user.id}}] {{user.name}}: {{user.age}}</li>
+  <li *ngFor="let user of users | sort:'age'">[{{user.id}}] {{user.name}}: {{user.age}}</li>
 </ul>
 //
 // The output:
