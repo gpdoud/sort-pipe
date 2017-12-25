@@ -6,7 +6,7 @@ The pipes **sort** and **sortDesc** are pipes in Angular 5 built to sort arrays 
 
 ```
 sort {:[key]}}
-sortDesc {:[key]}} key default is 'name'
+sortDesc {:[key]}}
 
 [key] default value is 'name'
 ```
