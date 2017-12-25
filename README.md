@@ -4,7 +4,12 @@ The pipes **sort** and **sortDesc** are pipes in Angular 5 built to sort arrays 
 
 ## Format
 
-`{sort|sortDesc{:[key]}} key default is 'name'`
+```
+sort {:[key]}}
+sortDesc {:[key]}} key default is 'name'
+
+[key] default value is 'name'
+```
 
 Because these pipes are designed to sort arrays of objects the key to sort is required. The default value for the key is the 'name'.
 
