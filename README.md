@@ -84,3 +84,8 @@ Finally, if the sort by age should be in descending sequence ...
 [3] James: 23
 ```
 
+## In closing
+
+If you use the pipes, I hope they make your application a little better. Feel free to send me an email telling me how you're using it.
+
+Greg
