@@ -5,7 +5,7 @@ import { User } from './user';
   selector: 'app-root',
   template: `
     <ul>
-      <li *ngFor='let user of users | sortDesc:"age"'>[{{user.id}}] {{user.name}}: {{user.age}}</li>
+      <li *ngFor="let user of users | sort:'name':'asc'">[{{user.id}}] {{user.name}}: {{user.age}}</li>
     </ul>
   `,
   styles: []

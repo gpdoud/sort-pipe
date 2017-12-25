@@ -1,17 +1,17 @@
-# sort & sortDesc pipes for Angular
+# *sort* pipe for Angular
 
-The pipes **sort** and **sortDesc** are pipes in Angular 5 built to sort arrays of objects and replace the depricated *orderBy* pipe that existed in previous versions of Angular.
+The pipe **sort** is an Angular pipe built to sort arrays of objects and replace the deprecated *orderBy* pipe that existed in previous versions of Angular.
 
 ## Format
 
 ```
-sort {:[key]}}
-sortDesc {:[key]}}
+sort {:key:{asc|desc}}}
 
-[key] default value is 'name'
+[key] : default value is 'name'
+asc | desc : sorts in ascending. default is 'asc'
 ```
 
-Because these pipes are designed to sort arrays of objects the key to sort is required. The default value for the key is the 'name'.
+Because this pipe is designed to sort arrays of objects, the key to sort is required. The default value for the key is the 'name'.
 
 ## Example
 
@@ -79,7 +79,7 @@ Finally, if the sort by age should be in descending sequence ...
 
 ```
 <ul>
-  <li *ngFor='let user of users | sort:"age"'>[{{user.id}}] {{user.name}}: {{user.age}}</li>
+  <li *ngFor='let user of users | sort:'age':'desc'">[{{user.id}}] {{user.name}}: {{user.age}}</li>
 </ul>
 //
 // The output:
@@ -92,6 +92,6 @@ Finally, if the sort by age should be in descending sequence ...
 
 ## In closing
 
-If you use the pipes, I hope they make your application a little better. Feel free to send me an email telling me how you're using it.
+If you use the pipe, I hope it makes your application a little better. Feel free to send me an email telling me how you're using it.
 
 Greg
